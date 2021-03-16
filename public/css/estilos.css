@@ -1,0 +1,245 @@
+/* -- -- -- -- -- -- ESTILOS PARA LA BARRA DE NAVEGACION -- -- -- -- - */
+
+footer {
+    margin-top: 100px;
+}
+
+.barra {
+    padding: 20px 0;
+    background-color: grey;
+}
+
+.navbar {
+    background-color: cornflowerblue;
+    box-shadow: 0px -1px 14px 0px #000;
+    padding: 0px;
+}
+
+.navbar ul li a {
+    color: #fff;
+}
+
+.navbar ul li a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar-nav {
+    margin: 0 auto !important;
+}
+
+.navbar ul li {
+    padding: 10px 0;
+}
+
+
+/* Sweep To Top */
+
+.navbar ul li.hvr-sweep-to-top {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+
+.navbar ul li.hvr-sweep-to-top:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: grey;
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.navbar ul li.hvr-sweep-to-top:hover,
+.navbar ul li.hvr-sweep-to-top:focus,
+.navbar ul li.hvr-sweep-to-top:active {
+    color: white;
+}
+
+.navbar ul li.hvr-sweep-to-top:hover:before,
+.navbar ul li.hvr-sweep-to-top:focus:before,
+.navbar ul li.hvr-sweep-to-top:active:before {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+}
+
+
+/* -- -- -- -- -- -- -- ESTILOS PARA EL HOME -- -- -- -- -- --  */
+
+.home .row {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.titulo-padre {
+    width: fit-content;
+    margin: 50px 0;
+}
+
+.titulo {
+    margin-top: 50px;
+    max-width: 100%;
+}
+
+.guia {
+    margin-top: 50px;
+}
+
+.home .row table {
+    margin-top: 50px;
+    width: 100%;
+}
+
+table:not(.formulario table) {
+    width: 100%;
+    border: 1px solid #000;
+    color: #fff;
+    text-align: center;
+}
+
+table .cabecera {
+    background-color: cornflowerblue;
+}
+
+table tr:not(.cabecera) {
+    background-color: dimgrey;
+}
+
+table tr:hover:not(.cabecera) {
+    background-color: gray;
+}
+
+table td {
+    padding: 5px 0 !important;
+}
+
+table td a {
+    color: #fff;
+}
+
+
+/* RECURSO */
+
+.separa50 {
+    height: 50px;
+}
+
+
+/* Boton para crear un producto nuevo */
+
+.crear {
+    color: #000;
+    padding: 10px;
+    border-radius: 5px !important;
+    color: #fff;
+}
+
+.crear:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.crear.hvr-shutter-in-horizontal {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    background: cornflowerblue;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+
+.crear.hvr-shutter-in-horizontal:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: grey;
+    border-radius: 5px;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    -webkit-transform-origin: 50%;
+    transform-origin: 50%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.crear.hvr-shutter-in-horizontal:hover,
+.crear.hvr-shutter-in-horizontal:focus,
+.crear.hvr-shutter-in-horizontal:active {
+    color: white;
+}
+
+.crear.hvr-shutter-in-horizontal:hover:before,
+.crear.hvr-shutter-in-horizontal:focus:before,
+.crear.hvr-shutter-in-horizontal:active:before {
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+}
+
+.formulario tr {
+    background-color: #fff !important;
+    color: #000;
+}
+
+.centrado {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.centrado.opciones {
+    margin-top: 0px;
+}
+
+.formulario table {
+    margin: 50px 0;
+    width: 450px;
+}
+
+.formulario .btn-crear {
+    margin: 0 auto;
+    width: 100px;
+}
+
+.btn-crear {
+    margin-top: 50px;
+}
+
+.linea-horizontal {
+    height: 2px;
+    width: 100%;
+    background-color: cornflowerblue;
+}
